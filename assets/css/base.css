@@ -140,6 +140,12 @@ nav a {
 .bdr-2 {
     border-radius: 14px !important;
 }
+.bdr-2 .card-image img{
+    border-radius: 14px 14px 0 0 !important;
+}
+.bdr-2 .card-action{
+    border-radius: 0 0 14px 14px !important;
+}
 .bdr-3 {
     border-radius: 22px !important;
 }
