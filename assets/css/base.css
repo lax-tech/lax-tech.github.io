@@ -224,7 +224,7 @@ nav a {
     height: max-content;
     transform: translateY(-10%);
     margin-right: 20px;
-    animation: scroll 250s infinite 0s alternate-reverse linear;
+    animation: scroll 150s infinite 0s alternate-reverse linear;
 }
 
 .scroll-affiche-container li {
