@@ -1,0 +1,29 @@
+a {
+    color: #2C374C;
+}
+
+a:hover,
+button:hover {
+    color: rgb(99, 184, 240);
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.btn {
+    padding: 10px 14px;
+    background: #2C374C;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    img {
+        margin-left: 15px;
+        transition: all .4s !important;
+    }
+}

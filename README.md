@@ -1,1 +1,1 @@
-# lax-tech.github.io
+# akelax technology website code

@@ -1,0 +1,68 @@
+@import "../materialize-src/sass/materialize.scss";
+@import "./components/navbar.scss";
+@import "./components/section.scss";
+@import "./components/button.scss";
+@import "./components/modal.scss";
+@font-face {
+    font-family: Archivo;
+    src: url("../Archivo-VariableFont_wdth\,wght.ttf") format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+body {
+    position: relative;
+    font-family: Archivo;
+    color: #2C374C;
+    transition: all .4s;
+}
+
+strong {
+    color: #2C374C;
+}
+
+.pd {
+    padding: 0 80px !important;
+}
+
+@media only screen and (max-width: 772px) {
+    .pd {
+        padding: 0 12px !important;
+    }
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+    z-index: 1;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 20px;
+    padding: 10px;
+    width: 53px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 17px 0 rgb(89, 93, 95);
+    z-index: 2;
+    transition: all .4s !important;
+    &:hover {
+        background-color: rgb(111, 150, 177) !important;
+        img {
+            transition: all .4s !important;
+            transform: translateY(-12%);
+        }
+    }
+}
