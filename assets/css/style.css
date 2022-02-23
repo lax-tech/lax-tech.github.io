@@ -395,13 +395,13 @@ button {
 }
 
 .btn {
-    border-radius: 14px;
+    border-radius: 6px;
     color: white;
     cursor: pointer;
 }
 
 .btn.btn-large {
-    border-radius: 18px;
+    border-radius: 14px;
 }
 
 .btn-right {
