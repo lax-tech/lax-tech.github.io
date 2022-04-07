@@ -27,7 +27,7 @@ h4 {
     font-size: 38px;
     color: #222222;
     font-weight: 700;
-    font-family: 'Rubik Wet Paint', cursive;
+    font-family: 'Fugaz One', cursive;
 }
 
 a {
@@ -529,6 +529,11 @@ hr {
 .navbar-brand {
     position: relative;
     padding: 0px;
+}
+
+.navbar-brand img {
+    width: 60px !important;
+    animation: rotate 33s infinite 0s linear;
 }
 
 .top-nav-collapse {
@@ -1446,4 +1451,13 @@ textarea {
 
 .social-icon .google:hover {
     background: #CE332A;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
 }
