@@ -1,1 +1,0 @@
-# akelax technology website code
