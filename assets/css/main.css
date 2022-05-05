@@ -30,6 +30,11 @@ h4 {
     font-family: 'Plus Jakarta Sans', cursive;
 }
 
+h1 {
+    font-size: 60px !important;
+    line-height: 63px !important;
+}
+
 a {
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
