@@ -39,12 +39,127 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- 
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lexend:wght@100;200;300;500&family=Rubik+Wet+Paint&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&family=Lexend:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Demo styles -->
+    <style>
+        .swiper-container {
+            position: relative;
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        .lax-btn {
+            border-radius: 4px;
+            padding-top: 3px;
+            padding-left: 12px;
+            padding-right: 12px;
+            font-size: 13px;
+        }
+        
+        .swiper-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .swiper {
+            width: 300px;
+            height: 530px;
+        }
+        
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 18px;
+            font-size: 22px;
+            font-weight: bold;
+            border: 8px solid white;
+            background-color: white;
+            color: #abacae;
+        }
+        
+        .swiper-slide .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            border-radius: 0 0 18px 18px;
+        }
+        
+        .swiper-slide .description {
+            padding: 18px 18px;
+            background-color: white;
+        }
+        
+        .swiper-slide .description h3 {
+            font-size: 18px;
+        }
+        
+        .swiper-slide .description p {
+            font-size: 11px;
+            line-height: 15px;
+        }
+        
+        .swiper-slide .description .bottom {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            align-items: flex-end;
+        }
+        
+        .swiper-slide .image:nth-child(1n) {
+            background-color: rgba(206, 17, 17, 0.719);
+        }
+        
+        .swiper-slide .image:nth-child(2n) {
+            background-color: rgba(0, 140, 255, 0.692);
+        }
+        
+        .swiper-slide .image:nth-child(3n) {
+            background-color: rgba(10, 184, 112, 0.699);
+        }
+        
+        .swiper-slide .image:nth-child(4n) {
+            background-color: rgba(211, 123, 7, 0.719);
+        }
+        
+        .swiper-slide .image:nth-child(5n) {
+            background-color: rgba(118, 163, 12, 0.692);
+        }
+        
+        .swiper-slide .image:nth-child(6n) {
+            background-color: rgba(180, 10, 47, 0.719);
+        }
+        
+        .swiper-slide .image:nth-child(7n) {
+            background-color: rgba(35, 99, 19, 0.699);
+        }
+        
+        .swiper-slide .image:nth-child(8n) {
+            background-color: rgba(0, 68, 255, 0.705);
+        }
+        
+        .swiper-slide .image:nth-child(9n) {
+            background-color: rgba(218, 12, 218, 0.705);
+        }
+        
+        .swiper-slide .image:nth-child(10n) {
+            background-color: rgba(54, 94, 77, 0.726);
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -81,23 +196,23 @@
                                 Avis
                             </a>
                         </li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pricing">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">
               Tarif
             </a>
-                    </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">
                         Nos Produits
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">
                         A propos
                     </a>
-                </li>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">
                   Contact
@@ -110,33 +225,33 @@
         <!-- Navbar End -->
 
         <!-- Hero Area Start -->
-        <div  style="background: linear-gradient(to bottom right, rgb(255, 255, 255) 20%, rgba(255, 255, 255, 0.699) 100%), url(assets/img/illustration/work1Plan\ de\ travail\ 60.png); background-position: right; background-repeat: no-repeat; background-size: cover;">
-        
-        <div id="hero-area" class="hero-area-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-                        <div class="contents">
-                            <h1 class="head-title">Laissez-nous créer votre site web ou appli mobile</h1>
-                            <p>
-                                Soucieux de participer au developpement technologique de notre pays, nous bossons dur pour vous proposer des solutions innovantes et toujours à la pointe de la technologie.
-                                <br> Car satisfaction est et sera toujours notre premier objectif.
-                            </p>
-                            <div class="header-button">
-                                <a href="https://api.whatsapp.com/send?phone=243810843164&text=Laxtech" class="btn btn-common">Commandez</i></a>
-                                <a href="https://api.whatsapp.com/send?phone=243810843164&text=Information sur Laxtech et ses produits/services" class="btn btn-border video-popup">En savoir plus</i></a>
+        <div style="background: linear-gradient(to bottom right, rgb(255, 255, 255) 20%, rgba(255, 255, 255, 0.699) 100%), url(assets/img/illustration/work1Plan\ de\ travail\ 60.png); background-position: right; background-repeat: no-repeat; background-size: cover;">
+
+            <div id="hero-area" class="hero-area-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                            <div class="contents">
+                                <h1 class="head-title">Laissez-nous créer votre site web ou appli mobile</h1>
+                                <p>
+                                    Soucieux de participer au developpement technologique de notre pays, nous bossons dur pour vous proposer des solutions innovantes et toujours à la pointe de la technologie.
+                                    <br> Car satisfaction est et sera toujours notre premier objectif.
+                                </p>
+                                <div class="header-button">
+                                    <a href="https://api.whatsapp.com/send?phone=243810843164&text=Laxtech" class="btn btn-common">Commandez</i></a>
+                                    <a href="https://api.whatsapp.com/send?phone=243810843164&text=Information sur Laxtech et ses produits/services" class="btn btn-border video-popup">En savoir plus</i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                        <div class="intro-img">
-                            <img class="img-fluid" src="assets/img/illustration/undraw_real_time_sync_re_nky7.svg" alt="">
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                            <div class="intro-img">
+                                <img class="img-fluid" src="assets/img/illustration/undraw_real_time_sync_re_nky7.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
         <!-- Hero Area End -->
 
     </header>
@@ -240,7 +355,7 @@
                             </div>
                             <div class="content">
                                 <p>
-                                    Nous sommes une equipe des jeunes développeurs informatiques motivés pour travailler sur tout type de projet (web, mobile, desktop, ...etc)
+                                    Nous sommes une equipe des jeunes développeurs informatiques motivés à travailler sur tout type de projet (web, mobile, desktop, ...etc)
                                     <b>de manière agile</b> afin de vous servir le meilleur.
                                 </p>
                                 <a href="#" class="btn btn-common mt-3">lire plus</a>
@@ -335,7 +450,7 @@
         </div>
     </section>
     <!-- Features Section End -->
-    
+
     <!-- Testimonial Section Start -->
     <section id="showcase" class="testimonial section-padding">
         <div class="container">
@@ -344,7 +459,7 @@
                 <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div id="testimonials" class="owl-carousel wow fadeInUp" data-wow-delay="1.2s">
                         <div class="item">
                             <div class="testimonial-item">
@@ -425,22 +540,59 @@
                             </div>
                         </div>
                     </div>
+                </div> -->
+            </div>
+            <!-- Swiper -->
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image center-back" style="background: url(/assets/img/feature/intro-mobile.png);">Slide 1</div>
+                        <div class="description">
+                            <h3>
+                                <a href="#">Mohindo Images</a>
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque unde sed aliquam enim? Alias libero.</p>
+                            <div class="bottom">
+                                <a class="lax-btn secondary-color black-text" href="#">visiter</a> <span>Depuis 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
                 </div>
             </div>
+
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    effect: "cards",
+                    grabCursor: true,
+                });
+            </script>
             <a href="">Voir plus</a>
         </div>
     </section>
 
     <!-- Testimonial Section End -->
-    
+
     <!-- Call To Action Section Start -->
     <section id="cta" class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
                     <div class="cta-text">
-                        <h4>Passer votre commande maintenant</h4>
-                        <p>Praesent imperdiet, tellus et euismod euismod, risus lorem euismod erat, at finibus neque odio quis metus. Donec vulputate arcu quam. </p>
+                        <h4>Contactez-nous maintenant</h4>
+                        <p>Praesent imperdiet, tellus et neque odio quis metus. Donec vulputate arcu quam. </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-12 text-right wow fadeInRight" data-wow-delay="0.3s">
@@ -790,8 +942,8 @@
     <script src="assets/js/contact-form-script.min.js"></script>
 
     <script>
-        const logo = document.querySelector(".navbar-brand") 
-        document.addEventListener('scroll', function (e){
+        const logo = document.querySelector(".navbar-brand")
+        document.addEventListener('scroll', function(e) {
             console.log(window.scrollY)
             logo.style.transform = `rotateZ(${Math.floor(window.scrollY/8)}deg)`
         })

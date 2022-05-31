@@ -4,10 +4,12 @@
     font-family: Nexa;
     src: url(/assets/fonts/Nexa-Font/Nexa\ Regular.otf) format("opentype");
 }
+
 @font-face {
     font-family: Nexa-light;
     src: url(/assets/fonts/Nexa-Font/Nexa\ Light.otf) format("opentype");
 }
+
 @font-face {
     font-family: Nexa-bold;
     src: url(/assets/fonts/Nexa-Font/Nexa\ Bold.otf) format("opentype");
@@ -81,12 +83,44 @@ a:not([href]):not([tabindex]) {
     color: #fff;
 }
 
+.primary-color {
+    background-color: #3775ba;
+}
+
+.secondary-color {
+    background-color: #f1e627;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.primary-text-color {
+    color: #3775ba;
+}
+
+.secondary-text-color {
+    color: #f1e627;
+}
+
+.black-text {
+    color: black;
+}
+
+.white-text {
+    color: white;
+}
+
 .section-header {
     margin-bottom: 30px;
 }
 
 .section-header p {
-    text: center;
+    text-align: center;
     font-weight: 400;
     line-height: 26px;
 }
@@ -97,6 +131,15 @@ a:not([href]):not([tabindex]) {
     display: inline-block;
     font-weight: 700;
     position: relative;
+}
+
+
+/* CUSTOM */
+
+.center-back {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .shape {
