@@ -564,12 +564,12 @@
                         <div class="image center-back" style="background-image: url(/assets/img/realisations/Screenshot_20220531-143754.png);"></div>
                         <div class="description">
                             <h3>
-                                <a class="" href="#">Mohindo Images</a>
+                                <a class="" href="https://mohindoimages.herokuapp.com/">Mohindo Images</a>
                             </h3>
                             <p>Banque d'images africaine.</p>
                             <p>Entréprise: Allo tech</p>
                             <div class="bottom">
-                                <a class="lax-btn secondary-color black-text" href="#">visiter</a> <span>Depuis 2020</span>
+                                <a class="lax-btn secondary-color black-text" href="https://mohindoimages.herokuapp.com/">visiter</a> <span>Depuis 2020</span>
                             </div>
                         </div>
                     </div>
@@ -582,19 +582,20 @@
                             <p>Entréprise base sur l'exploitation agricole.</p>
                             <p>Entréprise: Yetu Group</p>
                             <div class="bottom">
-                                <a class="lax-btn secondary-color black-text" href="http://merdi-akelax.github.io/Yetu-group-site">visiter</a> <span>Depuis 2021</span>
+                                <a class="lax-btn secondary-color black-text" href="http://merdi-akelax.github.io/Yetu-group-site">visiter</a> <span>Il y a 1 mois</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Swiper JS -->
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+            <div class="swiper-button-next white-text"></div>
+            <div class="swiper-button-prev white-text"></div>
+            <div class="swiper-pagination"></div>
             <!-- Initialize Swiper -->
             <script>
                 var swiper = new Swiper(".mySwiper", {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                     effect: "cards",
                     grabCursor: true,
                 });
