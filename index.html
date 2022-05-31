@@ -235,7 +235,7 @@
                             <div class="contents">
                                 <h1 class="head-title">Laissez-nous créer votre site web ou appli mobile</h1>
                                 <p>
-                                    Soucieux de participer au developpement technologique de notre pays, nous bossons dur pour vous proposer des solutions innovantes et toujours à la pointe de la technologie.
+                                    Soucieux de participer au developpement technologique de notre pays, nous travaillons dur pour vous proposer des solutions innovantes et toujours à la pointe de la technologie.
                                     <br> Car satisfaction est et sera toujours notre premier objectif.
                                 </p>
                                 <div class="header-button">
@@ -817,24 +817,21 @@
                         <div class="widget">
                             <h3 class="footer-logo"><img src="assets/img/logo/workPlan de travail 1.png" height="100" alt=""></h3>
                             <div class="textwidget">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus suscipit quis.</p>
+                                <p>Laxtech (Lax technologies) est une Société par Action Simplifiée</p>
                             </div>
                             <div class="social-icon">
-                                <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
+                                <a class="facebook" href="https://www.facebook.com/Laxtech-110134948224623/"><i class="lni-facebook-filled"></i></a>
+                                <!-- 
                                 <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
                                 <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
-                                <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>
+                                <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                         <h3 class="footer-titel">Products</h3>
                         <ul class="footer-link">
-                            <li><a href="#">Tracking</a></li>
-                            <li><a href="#">Application</a></li>
-                            <li><a href="#">Resource Planning</a></li>
-                            <li><a href="#">Enterprise</a></li>
-                            <li><a href="#">Employee Management</a></li>
+                            <li><a href="https://laxmedical.github.io/">Laxmedical</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
@@ -903,9 +900,14 @@
     <script src="assets/js/contact-form-script.min.js"></script>
 
     <script>
+        const Form = document.querySelector('#contactForm')
         const logo = document.querySelector(".navbar-brand")
         document.addEventListener('scroll', function(e) {
             logo.style.transform = `rotateZ(${Math.floor(window.scrollY/8)}deg)`
+        })
+
+        Form.addEventListener('submit', function(e) {
+            e.preventDefault()
         })
     </script>
 
