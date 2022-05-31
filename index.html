@@ -789,6 +789,14 @@
     <script src="assets/js/form-validator.min.js"></script>
     <script src="assets/js/contact-form-script.min.js"></script>
 
+    <script>
+        const logo = document.querySelector(".navbar-brand") 
+        document.addEventListener('scroll', function (e){
+            console.log(window.scrollY)
+            logo.style.transform = `rotateZ(${Math.floor(window.scrollY/5.5)}deg)`
+        })
+    </script>
+
 </body>
 
 </html>
