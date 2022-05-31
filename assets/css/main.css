@@ -112,7 +112,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .white-text {
-    color: white;
+    color: white !important;
 }
 
 .section-header {
