@@ -456,7 +456,8 @@
     <section id="showcase" class="testimonial section-padding">
         <div class="container">
             <div class="section-header text-center">
-                <h2 class="section-title wow fadeInDown white-text" data-wow-delay="0.3s">Nos réalisations</h2>
+                <!-- 
+                <h2 class="section-title wow fadeInDown white-text" data-wow-delay="0.3s">Nos réalisations</h2> -->
                 <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
             </div>
             <div class="row justify-content-center">
@@ -545,61 +546,70 @@
             </div>
             <!-- Swiper -->
 
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="image center-back" style="background-image: url(/assets/img/realisations/Screenshot_20211124-095616.png);"></div>
-                        <div class="description">
-                            <h3>
-                                <a href="https://eyanogo.com/">Eyanogo</a>
-                            </h3>
-                            <p>Plateforme de collecte de font africaine.</p>
-                            <p>Entréprise: Eyano Legacy Group</p>
-                            <div class="bottom">
-                                <a class="lax-btn secondary-color black-text" href="https://eyanogo.com/">visiter</a> <span>Depuis 2020</span>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 white-text">
+                    <h3 class="white-text">Nos récentes conceptions</h3>
+                    <p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe, quibusdam vero eligendi ipsum officia, asperiores !</p>
+                    <br>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image center-back" style="background-image: url(/assets/img/realisations/Screenshot_20211124-095616.png);"></div>
+                                <div class="description">
+                                    <h3>
+                                        <a href="https://eyanogo.com/">Eyanogo</a>
+                                    </h3>
+                                    <p>Plateforme de collecte de font africaine.</p>
+                                    <p>Entréprise: Eyano Legacy Group</p>
+                                    <div class="bottom">
+                                        <a class="lax-btn secondary-color black-text" href="https://eyanogo.com/">visiter</a> <span>Depuis 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image center-back" style="background-image: url(/assets/img/realisations/Screenshot_20220531-143754.png);"></div>
+                                <div class="description">
+                                    <h3>
+                                        <a class="" href="https://mohindoimages.herokuapp.com/">Mohindo Images</a>
+                                    </h3>
+                                    <p>Banque d'images africaine.</p>
+                                    <p>Entréprise: Allo tech</p>
+                                    <div class="bottom">
+                                        <a class="lax-btn secondary-color black-text" href="https://mohindoimages.herokuapp.com/">visiter</a> <span>Depuis 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image center-back" style="background-image: url(/assets/img/realisations/Screenshot_20220531-143449.png);"></div>
+                                <div class="description">
+                                    <h3>
+                                        <a href="http://merdi-akelax.github.io/Yetu-group-site">Yetu group</a>
+                                    </h3>
+                                    <p>Entréprise base sur l'exploitation agricole.</p>
+                                    <p>Entréprise: Yetu Group</p>
+                                    <div class="bottom">
+                                        <a class="lax-btn secondary-color black-text" href="http://merdi-akelax.github.io/Yetu-group-site">visiter</a> <span>Il y a 1 mois</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="image center-back" style="background-image: url(/assets/img/realisations/Screenshot_20220531-143754.png);"></div>
-                        <div class="description">
-                            <h3>
-                                <a class="" href="https://mohindoimages.herokuapp.com/">Mohindo Images</a>
-                            </h3>
-                            <p>Banque d'images africaine.</p>
-                            <p>Entréprise: Allo tech</p>
-                            <div class="bottom">
-                                <a class="lax-btn secondary-color black-text" href="https://mohindoimages.herokuapp.com/">visiter</a> <span>Depuis 2020</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="image center-back" style="background-image: url(/assets/img/realisations/Screenshot_20220531-143449.png);"></div>
-                        <div class="description">
-                            <h3>
-                                <a href="http://merdi-akelax.github.io/Yetu-group-site">Yetu group</a>
-                            </h3>
-                            <p>Entréprise base sur l'exploitation agricole.</p>
-                            <p>Entréprise: Yetu Group</p>
-                            <div class="bottom">
-                                <a class="lax-btn secondary-color black-text" href="http://merdi-akelax.github.io/Yetu-group-site">visiter</a> <span>Il y a 1 mois</span>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="swiper-button-next white-text"></div>
+                    <div class="swiper-button-prev white-text"></div>
+                    <div class="swiper-pagination"></div>
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper(".mySwiper", {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                            effect: "cards",
+                            grabCursor: true,
+                        });
+                    </script>
                 </div>
             </div>
-            <div class="swiper-button-next white-text"></div>
-            <div class="swiper-button-prev white-text"></div>
-            <div class="swiper-pagination"></div>
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper(".mySwiper", {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                    effect: "cards",
-                    grabCursor: true,
-                });
-            </script>
             <div class="text-center white-text">
                 <br><br>
                 <a class="white-text" href="showcase.html">Voir plus</a>
