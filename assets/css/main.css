@@ -1100,7 +1100,7 @@ hr {
 
 .testimonial {
     position: relative;
-    background-color: #2196F3;
+    background: linear-gradient(-210deg, #3775BA, #2196F3);
 }
 
 .testimonial-item {
