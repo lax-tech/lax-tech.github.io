@@ -106,6 +106,9 @@
 /* mobile or only mobile */
 
 @media (max-width: 767px) {
+    .navbar{
+        padding: 0 !important;
+    }
     #showcase {
         text-align: center !important;
     }
