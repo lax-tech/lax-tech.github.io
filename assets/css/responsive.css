@@ -106,6 +106,9 @@
 /* mobile or only mobile */
 
 @media (max-width: 767px) {
+    #showcase {
+        text-align: center !important;
+    }
     .section-padding {
         padding: 60px 0;
     }
