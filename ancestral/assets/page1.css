@@ -1,0 +1,20 @@
+body {
+    background-color: #FFC700;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+    align-items: center;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+a img {
+    height: 15px;
+    margin-left: 20px;
+}

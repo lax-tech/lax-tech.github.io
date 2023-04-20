@@ -1,0 +1,18 @@
+body {
+    background-color: #FFC700;
+}
+
+header {
+    padding: 30px 0;
+}
+
+header a img {
+    width: 35px;
+}
+
+main {}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
