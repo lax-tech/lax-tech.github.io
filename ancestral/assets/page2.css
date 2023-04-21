@@ -3,9 +3,20 @@ main {
     height: 100vh;
     padding: 20px;
     align-items: center;
+    overflow: hidden;
 }
 
 img {
     max-height: 100%;
     max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-img {
+        position: relative;
+        top: 110px;
+        right: -180px;
+        transform: scale(1.5);
+        z-index: -1;
+    }
 }

@@ -57,7 +57,7 @@ th {
 }
 
 .btn-primary {
-    height: 45px;
+    height: 55px;
 }
 
 .text-light {
@@ -218,6 +218,10 @@ th {
 
 .flex-row {
     flex-direction: column;
+}
+
+.justify-space-between {
+    justify-content: space-between;
 }
 
 .center-col {
