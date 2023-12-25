@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lax Tech - Merry Christmas</title>
+
+    <meta
+      name="keywords"
+      content="Technologie RDC, innovation, Merry Christmas"
+    />
+    <meta name="author" content="Lax technologies SAS" />
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="LaxTech wishes you" />
+
+    <!-- OG -->
+    <meta property="og:title" content="Lax Tech - Merry Christmas" />
+    <meta property="og:description" content="LaxTech wishes you" />
+    <meta
+      property="og:image"
+      content="https://s3-us-west-2.amazonaws.com/s.cdpn.io/25839/critters.svg"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas");
+
+      @font-face {
+        font-family: NexaRegular;
+        src: url("./assets/css/Fonts/NexaRegular.ttf");
+      }
+      @font-face {
+        font-family: NexaTextRegular;
+        src: url("./assets/css/Fonts/NexaLight.ttf");
+      }
+
+      * {
+        font-family: "NexaTextRegular";
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        animation: colorAnim 20s infinite 0s ease-in alternate;
+        overflow: hidden;
+        background: #cd8cdf;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      a {
+        font-family: "NexaRegular";
+      }
+
+      .snow {
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+      }
+
+      .trees {
+        display: grid;
+        grid-template-rows: 50% 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/25839/trees.svg)
+          repeat-x;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: calc(100vh - 150px);
+      }
+
+      .merry {
+        color: #ffffff;
+        text-shadow: 0 0 10px #cd8cdf;
+        text-align: center;
+        grid-row: 1;
+        grid-column: 1/4;
+        align-self: center;
+        justify-self: center;
+        font-size: 30px;
+        padding: 20px;
+      }
+
+      .fox {
+        grid-column: 3;
+        grid-row: 3;
+        align-self: end;
+        justify-self: start;
+        position: relative;
+        margin-bottom: -50px;
+      }
+
+      .tree {
+        align-self: end;
+        justify-self: end;
+        grid-column: 1;
+        grid-row: 3;
+        margin-bottom: -50px;
+      }
+
+      .lax {
+        position: absolute;
+        z-index: 1000;
+        bottom: -20px;
+        display: flex;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+      }
+
+      .lax .content {
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        border-radius: 12px;
+        border: #e8eef2a2 1px solid;
+        background-color: #ffffff55;
+        display: flex;
+        justify-content: center;
+        backdrop-filter: blur(20px);
+      }
+
+      @keyframes colorAnim {
+        from {
+          background: #ffffff;
+        }
+        50% {
+          background: #b83939;
+        }
+        75% {
+          background: #cd8cdf;
+        }
+        to {
+          background: #ffffff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="particles-js" class="snow"></div>
+    <div class="trees">
+      <div class="merry">
+        <h1>Merry Christmas!</h1>
+      </div>
+      <div class="fox">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/25839/critters.svg"
+          width="300px"
+        />
+      </div>
+      <div class="tree">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/25839/tree.svg"
+          width="200px"
+        />
+      </div>
+    </div>
+
+    <footer>
+      <style>
+        .lax-logo {
+          margin-right: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 2px;
+        }
+
+        .lax-logo span {
+          display: inline-block;
+          width: 80px;
+          margin-top: 10px;
+          background: radial-gradient(#5f739457 0%, #ffffff00 60%);
+          border-radius: 50%;
+          height: 20px;
+        }
+
+        .lax-logo img {
+          display: inline-block;
+          margin-bottom: -15px;
+          animation: rotate 10s infinite 0s linear;
+        }
+
+        .lax-logo:hover img {
+          animation: none;
+          transform: scale(1.2);
+          filter: contrast(200%);
+        }
+
+        @keyframes rotate {
+          from {
+            transform: rotateZ(0deg);
+          }
+          to {
+            transform: rotateZ(360deg);
+          }
+        }
+      </style>
+      <div class="lax">
+        <div class="content">
+          <div style="padding: 0px 0; display: flex; align-items: center">
+            <div>
+              <a class="lax-logo" href="https://www.laxtechnologies.com">
+                <img
+                  src="./assets/img/favicon.png"
+                  width="50"
+                  alt="Lax Technologies logo"
+                />
+                <span></span>
+              </a>
+            </div>
+            <div>
+              <h2
+                style="
+                  font-size: 14px;
+                  line-height: 100%;
+                  margin: 0;
+                  color: #333333;
+                "
+              >
+                By
+                <a style="color: #7fa7e8" href="https://laxtech.pro"
+                  >Lax technologies S.A.S</a
+                >
+              </h2>
+              <sub>Made with 💜 for Chirstmas day</sub>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 400,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#fff",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+          },
+          opacity: {
+            value: 1,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 10,
+            random: true,
+            anim: {
+              enable: false,
+            },
+          },
+          line_linked: {
+            enable: false,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "bottom",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "repulse",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 0.5,
+              },
+            },
+            bubble: {
+              distance: 100,
+              size: 4,
+              duration: 0.3,
+              opacity: 1,
+              speed: 3,
+            },
+            repulse: {
+              distance: 100,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>
