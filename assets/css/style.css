@@ -414,10 +414,10 @@ input[type="color"] {
   border: 1px solid var(--tp-theme-1);
   background-color: white;
   border-radius: 10px;
-  height: 65px;
-  line-height: 65px;
+  height: 55px;
+  line-height: 55px;
   text-align: center;
-  padding: 0 50px;
+  padding: 0px 10px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -3312,32 +3312,32 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .tp-hero__button {
-  margin-right: 20px;
+  margin-right: 10px;
   line-height: 0;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-hero__button {
-    margin-right: 30px;
+    margin-right: 15px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-hero__button {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 
 @media (max-width: 767px) {
   .tp-hero__button {
-    margin-bottom: 0px;
-    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-right: 20px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-hero__button {
-    margin-right: 20px;
+    margin-right: 0px;
   }
 }
 
@@ -10110,4 +10110,23 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .scroll-top.open {
   bottom: 30px;
+}
+
+
+.animate_circle{
+
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  animation: spin 2s linear infinite;
+
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
