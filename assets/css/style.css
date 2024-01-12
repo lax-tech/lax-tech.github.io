@@ -417,7 +417,7 @@ input[type="color"] {
   height: 55px;
   line-height: 55px;
   text-align: center;
-  padding: 0px 10px;
+  padding: 0px 20px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -5069,7 +5069,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .service-item-three__img {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -10129,4 +10129,8 @@ only screen and (min-width: 768px) and (max-width: 991px),
       transform: rotate(360deg);
     }
   }
+}
+
+.icon_resiwe{
+  width: 180px;
 }
