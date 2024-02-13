@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Up code Generator</title>
+
+    <script src="./assets/js/moment.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        border-bottom: 2px solid #d21c20;
+      }
+
+      main {
+        height: 65vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      main > div {
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid #d21c1f3c;
+        box-shadow: 0 0 20px 2px #d21c1f20;
+        text-align: center;
+      }
+
+      label {
+        display: block;
+        margin: 10px 0;
+      }
+
+      input {
+        padding: 10px;
+        border-radius: 6px;
+      }
+
+      span {
+        color: #d21c20;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/logo/BU.png" alt="logo Business Up" />
+      <h1>Business Up Code Generator</h1>
+    </header>
+
+    <main>
+      <div>
+        <label>
+          Saisissez le nombre de jours de validité du code, à compter
+          d'aujourd'hui
+        </label>
+        <input type="number" max="366" />
+        <br /><br />
+        <h2>Code: <span></span></h2>
+      </div>
+    </main>
+
+    <footer>
+      <div class="grey darken-4 bg-dark text-light">
+        <div style="padding: 20px; color: silver; background-color: #270909">
+          <style>
+            .lax-logo {
+              margin-right: 10px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 2px;
+            }
+
+            .lax-logo span {
+              display: inline-block;
+              width: 50px;
+              background-color: #0000008f;
+              border-radius: 50%;
+              height: 20px;
+            }
+
+            .lax-logo img {
+              display: inline-block;
+              margin-bottom: -15px;
+              animation: rotate 10s infinite 0s linear;
+            }
+
+            .lax-logo:hover img {
+              animation: none;
+              transform: scale(1.2);
+              filter: contrast(200%);
+            }
+
+            @keyframes rotate {
+              from {
+                transform: rotateZ(0deg);
+              }
+              to {
+                transform: rotateZ(360deg);
+              }
+            }
+          </style>
+          <div
+            class="div"
+            style="display: flex; justify-content: center; width: 100%"
+          >
+            <div style="padding: 0px 0; display: flex; align-items: center">
+              <div>
+                <a class="lax-logo" href="https://laxtech.pro">
+                  <img
+                    src="./assets/img/favicon.png"
+                    width="50"
+                    alt="Lax Technologies logo"
+                  />
+                  <span></span>
+                </a>
+              </div>
+              <div>
+                <h2
+                  style="
+                    font-size: 14px;
+                    line-height: 100%;
+                    margin: 0;
+                    color: aliceblue;
+                  "
+                >
+                  Developed by
+                  <a class="blue-text" href="https://laxtech.pro"
+                    >Lax technologies S.A.S</a
+                  >
+                </h2>
+                <sub>Leader de la Tech en Afrique</sub>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const inputElement = document.querySelector("input");
+      const codeElement = document.querySelector("span");
+
+      //codeElement.innerHTML = "df";
+
+      inputElement.addEventListener("input", (e) => {
+        const value = Number(e.target.value);
+        if (value) {
+          if (value < 366) {
+            codeElement.innerHTML = `203LAX${String(
+              moment().add(7, "days").valueOf()
+            ).slice(0, 9)}BUP4536`;
+          } else {
+            inputElement.value = 366;
+            codeElement.innerHTML = "";
+          }
+        } else {
+          codeElement.innerHTML = "";
+        }
+      });
+    </script>
+  </body>
+</html>
