@@ -170,8 +170,8 @@
         if (value) {
           if (value < 366) {
             codeElement.innerHTML = `203LAX${String(
-              moment().add(7, "days").valueOf()
-            ).slice(0, 9)}BUP4536`;
+              moment().add(value, "days").valueOf()
+            ).slice(0, 10)}BUP4536`;
           } else {
             inputElement.value = 366;
             codeElement.innerHTML = "";
